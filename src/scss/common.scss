@@ -1,0 +1,50 @@
+// Заголовки, общие БЄМ блоки и проче...
+
+// Pagination for swiper
+.swiper {
+  .swiper-pagination {
+  }
+  .swiper-pagination-bullets {
+  }
+  .swiper-pagination-bullet {
+    opacity: 0.5;
+    border: 2px solid #685ed6;
+    background: #ffffff;
+  }
+  .swiper-pagination-bullet-active {
+    background: #685ed6;
+    opacity: 1;
+  }
+  .swiper-wrapper {
+    padding-bottom: 50px;
+  }
+}
+
+// Кнопка для всей страницы
+.button {
+  font-weight: 700;
+  font-size: rem(18);
+  line-height: 133%;
+  text-align: center;
+  color: #ffffff;
+  padding: 12px 32px;
+  background: #685ed6;
+  border-radius: 6px;
+  transition: all 0.2s ease 0s;
+  transform: scale(1);
+  @media (any-hover: hover) {
+    &:hover {
+      background: #33afe1;
+      transform: scale(1.03);
+    }
+  }
+  &:active {
+    background: #18e1f7;
+  }
+}
+//  Одинаковый title
+.title {
+  font-weight: 800;
+  @include adaptiveValue("font-size", 46, 32);
+  line-height: 120%;
+}
