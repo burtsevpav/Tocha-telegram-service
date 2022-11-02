@@ -204,7 +204,7 @@ function initSliders() {
       observeParents: true,
       slidesPerView: 2,
       spaceBetween: 0,
-      autoHeight: true,
+      // autoHeight: true,
       speed: 800,
       //   keyboard: {
       //     enabled: true,
@@ -254,7 +254,7 @@ function initSliders() {
       breakpoints: {
         320: {
           slidesPerView: 1,
-          autoHeight: true,
+          // autoHeight: true,
         },
         500: {
           slidesPerView: 2,
