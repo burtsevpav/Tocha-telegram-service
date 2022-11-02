@@ -39,7 +39,7 @@ function initSliders() {
       observeParents: true,
       slidesPerView: 3,
       spaceBetween: 0,
-      autoHeight: true,
+      // autoHeight: true,
       speed: 800,
       //   keyboard: {
       //     enabled: true,
@@ -90,7 +90,6 @@ function initSliders() {
         320: {
           slidesPerView: 1,
           spaceBetween: 15,
-          autoHeight: true,
         },
         500: {
           slidesPerView: 1,
@@ -104,10 +103,10 @@ function initSliders() {
           slidesPerView: 3,
           spaceBetween: 20,
         },
-        // 1268: {
-        //   slidesPerView: 3,
-        //   spaceBetween: 30,
-        // },
+        1268: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
       },
 
       // События

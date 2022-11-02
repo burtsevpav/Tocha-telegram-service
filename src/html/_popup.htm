@@ -1,11 +1,162 @@
-<!-- 
-<div id="popup" aria-hidden="true" class="popup">
-	<div class="popup__wrapper">
-		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрыть</button>
-			<div class="popup__text">
-			</div>
-		</div>
-	</div>
+<div id="popup-signin" aria-hidden="true" class="popup">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__head">
+        <button data-close type="button" class="popup__close"></button>
+      </div>
+      <div class="popup__column column-popup">
+        <div class="column-popup__head">
+          <div class="column-popup__title">Вход</div>
+        </div>
+        <form name="formOne" action="#" class="column-popup__form form-popup">
+          <div class="form-popup__items">
+            <div class="form-popup__line">
+              <input
+                data-required
+                data-validate
+                autocomplete="off"
+                type="phone"
+                name="phoneOne"
+                data-error="Введите телефон!"
+                placeholder="Телефон"
+                class="form-popup__input input"
+              />
+            </div>
+            <div class="form-popup__line">
+              <input
+                data-required
+                data-validate
+                autocomplete="off"
+                type="password"
+                name="passwordOne"
+                data-error="Введите пароль!"
+                placeholder="Пароль"
+                class="form-popup__input input"
+              />
+              <button type="button" class="form-popup__viewpass">Показать пароль</button>
+            </div>
+          </div>
+          <button type="submit" class="form-popup__button button">Войти</button>
+        </form>
+        <div class="column-popup__account account-popup">
+          <p class="account-popup__text">У вас нет аккаунта?</p>
+          <a href="#" data-popup="#popup-signup" class="account-popup__button">Регистрация</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
- -->
+<div id="popup-signup" aria-hidden="true" class="popup">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__head">
+        <button data-close type="button" class="popup__close"></button>
+      </div>
+      <div class="popup__column column-popup">
+        <div class="column-popup__head">
+          <div class="column-popup__title">Регистрация</div>
+        </div>
+        <form name="formOne" action="#" class="column-popup__form form-popup">
+          <div class="form-popup__items">
+            <div class="form-popup__line">
+              <input
+                data-required
+                data-validate
+                autocomplete="off"
+                type="phone"
+                name="phoneOne"
+                data-error="Введите телефон!"
+                placeholder="Телефон"
+                class="form-popup__input input"
+              />
+            </div>
+            <div class="form-popup__line">
+              <input
+                data-required
+                data-validate
+                autocomplete="off"
+                type="phone"
+                name="phoneOne"
+                data-error="Введите почту!"
+                placeholder="Электронная почта"
+                class="form-popup__input input"
+              />
+            </div>
+            <div class="form-popup__line">
+              <input
+                data-required
+                data-validate
+                autocomplete="off"
+                type="password"
+                name="passwordOne"
+                data-error="Введите пароль!"
+                placeholder="Пароль"
+                class="form-popup__input input"
+              />
+            </div>
+            <div class="form-popup__line">
+              <input
+                data-required
+                data-validate
+                autocomplete="off"
+                type="password"
+                name="passwordOne"
+                data-error="Повторите пароль!"
+                placeholder="Повторите пароль"
+                class="form-popup__input input"
+              />
+            </div>
+          </div>
+          <button type="submit" class="form-popup__button button">Войти</button>
+        </form>
+        <div class="column-popup__account account-popup">
+          <p class="account-popup__text">У вас уже есть аккаунт?</p>
+          <a href="#" data-popup="#popup-signin" class="account-popup__button">Вход</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="popup-submit" aria-hidden="true" class="popup">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__head">
+        <button data-close type="button" class="popup__close"></button>
+      </div>
+      <div class="popup__column column-popup">
+        <div class="column-popup__head">
+          <div class="column-popup__title column-popup__title_align">Подключить сервис</div>
+        </div>
+        <form name="formOne" action="#" class="column-popup__form form-popup">
+          <div class="form-popup__items">
+            <div class="form-popup__line">
+              <input
+                data-required
+                data-validate
+                autocomplete="off"
+                type="text"
+                name="nameOne"
+                data-error="Введите имя!"
+                placeholder="Ваше имя"
+                class="form-popup__input input"
+              />
+            </div>
+            <div class="form-popup__line">
+              <input
+                data-required
+                data-validate
+                autocomplete="off"
+                type="email"
+                name="emailOne"
+                data-error="Введите почту!"
+                placeholder="Ваша почта"
+                class="form-popup__input input"
+              />
+            </div>
+          </div>
+          <button type="submit" class="form-popup__button button">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

@@ -12,6 +12,9 @@
   &__button {
   }
   &__error {
+    color: red;
+    font-weight: 500;
+    font-size: rem(14);
   }
 }
 //</FORM>
@@ -22,7 +25,7 @@
 
 // <INPUTS>
 // Снипет (HTML): inp
-// @import "input";
+@import "input";
 
 // <CHECK>
 // Снипет (HTML): chk

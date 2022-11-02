@@ -9,12 +9,25 @@ textarea {
   appearance: none;
 }
 .input {
-  background: #ffffff !important;
-  border-radius: 0 !important;
   width: 100%;
   display: block;
-  padding: 0px 20px;
-  border: 1px solid #eee;
+  padding: rem(13) rem(15);
+  outline: none;
+  transition: all 0.2s ease 0s;
+  border: 1px solid #f7f7fd;
+  @media (any-hover: hover) {
+    &:hover {
+      border: 1px solid #e8e6f8;
+    }
+  }
+  &:focus {
+    border: 1px solid #605dec;
+    border-radius: 4px;
+  }
+  &._form-error {
+    border: 1px solid red;
+    background: #fffafa;
+  }
   &._focus {
   }
   &._error {
